@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3FBDAD79256781FA000C3AE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBDAD78256781FA000C3AE6 /* AppDelegate.swift */; };
+		3FBDAD7B256781FA000C3AE6 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FBDAD7A256781FA000C3AE6 /* art.scnassets */; };
+		3FBDAD7D256781FA000C3AE6 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBDAD7C256781FA000C3AE6 /* GameViewController.swift */; };
+		3FBDAD80256781FA000C3AE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FBDAD7E256781FA000C3AE6 /* Main.storyboard */; };
+		3FBDAD82256781FD000C3AE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FBDAD81256781FD000C3AE6 /* Assets.xcassets */; };
+		3FBDAD8D256781FD000C3AE6 /* Falling_BricksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBDAD8C256781FD000C3AE6 /* Falling_BricksTests.swift */; };
+		3FBDAD98256781FD000C3AE6 /* Falling_BricksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBDAD97256781FD000C3AE6 /* Falling_BricksUITests.swift */; };
+		3FBDADB125678DE4000C3AE6 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBDADB025678DE4000C3AE6 /* Player.swift */; };
+		3FBDADB9256790A4000C3AE6 /* Obstacles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBDADB8256790A4000C3AE6 /* Obstacles.swift */; };
+		3FD6DCA22567A04F001BB923 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD6DCA12567A04F001BB923 /* GameScene.swift */; };
+		3FD6DCA72567A073001BB923 /* PhysicsCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD6DCA62567A073001BB923 /* PhysicsCategory.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3FBDAD89256781FD000C3AE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FBDAD6D256781FA000C3AE6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FBDAD74256781FA000C3AE6;
+			remoteInfo = "Falling Bricks";
+		};
+		3FBDAD94256781FD000C3AE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FBDAD6D256781FA000C3AE6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FBDAD74256781FA000C3AE6;
+			remoteInfo = "Falling Bricks";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3FBDAD75256781FA000C3AE6 /* Falling Bricks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Falling Bricks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FBDAD78256781FA000C3AE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3FBDAD7A256781FA000C3AE6 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		3FBDAD7C256781FA000C3AE6 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		3FBDAD7F256781FA000C3AE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3FBDAD81256781FD000C3AE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3FBDAD83256781FD000C3AE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FBDAD88256781FD000C3AE6 /* Falling BricksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Falling BricksTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FBDAD8C256781FD000C3AE6 /* Falling_BricksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Falling_BricksTests.swift; sourceTree = "<group>"; };
+		3FBDAD8E256781FD000C3AE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FBDAD93256781FD000C3AE6 /* Falling BricksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Falling BricksUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FBDAD97256781FD000C3AE6 /* Falling_BricksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Falling_BricksUITests.swift; sourceTree = "<group>"; };
+		3FBDAD99256781FD000C3AE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FBDADB025678DE4000C3AE6 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		3FBDADB8256790A4000C3AE6 /* Obstacles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Obstacles.swift; sourceTree = "<group>"; };
+		3FD6DCA12567A04F001BB923 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		3FD6DCA62567A073001BB923 /* PhysicsCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsCategory.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FBDAD72256781FA000C3AE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FBDAD85256781FD000C3AE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FBDAD90256781FD000C3AE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FBDAD6C256781FA000C3AE6 = {
+			isa = PBXGroup;
+			children = (
+				3FBDAD77256781FA000C3AE6 /* Falling Bricks */,
+				3FBDAD8B256781FD000C3AE6 /* Falling BricksTests */,
+				3FBDAD96256781FD000C3AE6 /* Falling BricksUITests */,
+				3FBDAD76256781FA000C3AE6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3FBDAD76256781FA000C3AE6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FBDAD75256781FA000C3AE6 /* Falling Bricks.app */,
+				3FBDAD88256781FD000C3AE6 /* Falling BricksTests.xctest */,
+				3FBDAD93256781FD000C3AE6 /* Falling BricksUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FBDAD77256781FA000C3AE6 /* Falling Bricks */ = {
+			isa = PBXGroup;
+			children = (
+				3FBDADB725678E4F000C3AE6 /* Views */,
+				3FBDADB625678E32000C3AE6 /* Overlays */,
+				3FBDADB525678DEA000C3AE6 /* Player Objects */,
+				3FBDAD78256781FA000C3AE6 /* AppDelegate.swift */,
+				3FBDAD7A256781FA000C3AE6 /* art.scnassets */,
+				3FBDAD7C256781FA000C3AE6 /* GameViewController.swift */,
+				3FBDAD7E256781FA000C3AE6 /* Main.storyboard */,
+				3FBDAD81256781FD000C3AE6 /* Assets.xcassets */,
+				3FBDAD83256781FD000C3AE6 /* Info.plist */,
+			);
+			path = "Falling Bricks";
+			sourceTree = "<group>";
+		};
+		3FBDAD8B256781FD000C3AE6 /* Falling BricksTests */ = {
+			isa = PBXGroup;
+			children = (
+				3FBDAD8C256781FD000C3AE6 /* Falling_BricksTests.swift */,
+				3FBDAD8E256781FD000C3AE6 /* Info.plist */,
+			);
+			path = "Falling BricksTests";
+			sourceTree = "<group>";
+		};
+		3FBDAD96256781FD000C3AE6 /* Falling BricksUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3FBDAD97256781FD000C3AE6 /* Falling_BricksUITests.swift */,
+				3FBDAD99256781FD000C3AE6 /* Info.plist */,
+			);
+			path = "Falling BricksUITests";
+			sourceTree = "<group>";
+		};
+		3FBDADB525678DEA000C3AE6 /* Player Objects */ = {
+			isa = PBXGroup;
+			children = (
+				3FBDADB025678DE4000C3AE6 /* Player.swift */,
+				3FBDADB8256790A4000C3AE6 /* Obstacles.swift */,
+				3FD6DCA62567A073001BB923 /* PhysicsCategory.swift */,
+			);
+			path = "Player Objects";
+			sourceTree = "<group>";
+		};
+		3FBDADB625678E32000C3AE6 /* Overlays */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Overlays;
+			sourceTree = "<group>";
+		};
+		3FBDADB725678E4F000C3AE6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3FD6DCA12567A04F001BB923 /* GameScene.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FBDAD74256781FA000C3AE6 /* Falling Bricks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FBDAD9C256781FD000C3AE6 /* Build configuration list for PBXNativeTarget "Falling Bricks" */;
+			buildPhases = (
+				3FBDAD71256781FA000C3AE6 /* Sources */,
+				3FBDAD72256781FA000C3AE6 /* Frameworks */,
+				3FBDAD73256781FA000C3AE6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Falling Bricks";
+			productName = "Falling Bricks";
+			productReference = 3FBDAD75256781FA000C3AE6 /* Falling Bricks.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3FBDAD87256781FD000C3AE6 /* Falling BricksTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FBDAD9F256781FD000C3AE6 /* Build configuration list for PBXNativeTarget "Falling BricksTests" */;
+			buildPhases = (
+				3FBDAD84256781FD000C3AE6 /* Sources */,
+				3FBDAD85256781FD000C3AE6 /* Frameworks */,
+				3FBDAD86256781FD000C3AE6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FBDAD8A256781FD000C3AE6 /* PBXTargetDependency */,
+			);
+			name = "Falling BricksTests";
+			productName = "Falling BricksTests";
+			productReference = 3FBDAD88256781FD000C3AE6 /* Falling BricksTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3FBDAD92256781FD000C3AE6 /* Falling BricksUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FBDADA2256781FD000C3AE6 /* Build configuration list for PBXNativeTarget "Falling BricksUITests" */;
+			buildPhases = (
+				3FBDAD8F256781FD000C3AE6 /* Sources */,
+				3FBDAD90256781FD000C3AE6 /* Frameworks */,
+				3FBDAD91256781FD000C3AE6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FBDAD95256781FD000C3AE6 /* PBXTargetDependency */,
+			);
+			name = "Falling BricksUITests";
+			productName = "Falling BricksUITests";
+			productReference = 3FBDAD93256781FD000C3AE6 /* Falling BricksUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FBDAD6D256781FA000C3AE6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					3FBDAD74256781FA000C3AE6 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					3FBDAD87256781FD000C3AE6 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 3FBDAD74256781FA000C3AE6;
+					};
+					3FBDAD92256781FD000C3AE6 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 3FBDAD74256781FA000C3AE6;
+					};
+				};
+			};
+			buildConfigurationList = 3FBDAD70256781FA000C3AE6 /* Build configuration list for PBXProject "Falling Bricks" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3FBDAD6C256781FA000C3AE6;
+			productRefGroup = 3FBDAD76256781FA000C3AE6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FBDAD74256781FA000C3AE6 /* Falling Bricks */,
+				3FBDAD87256781FD000C3AE6 /* Falling BricksTests */,
+				3FBDAD92256781FD000C3AE6 /* Falling BricksUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FBDAD73256781FA000C3AE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FBDAD7B256781FA000C3AE6 /* art.scnassets in Resources */,
+				3FBDAD82256781FD000C3AE6 /* Assets.xcassets in Resources */,
+				3FBDAD80256781FA000C3AE6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FBDAD86256781FD000C3AE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FBDAD91256781FD000C3AE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FBDAD71256781FA000C3AE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FD6DCA22567A04F001BB923 /* GameScene.swift in Sources */,
+				3FBDAD7D256781FA000C3AE6 /* GameViewController.swift in Sources */,
+				3FBDADB125678DE4000C3AE6 /* Player.swift in Sources */,
+				3FD6DCA72567A073001BB923 /* PhysicsCategory.swift in Sources */,
+				3FBDADB9256790A4000C3AE6 /* Obstacles.swift in Sources */,
+				3FBDAD79256781FA000C3AE6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FBDAD84256781FD000C3AE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FBDAD8D256781FD000C3AE6 /* Falling_BricksTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FBDAD8F256781FD000C3AE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FBDAD98256781FD000C3AE6 /* Falling_BricksUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3FBDAD8A256781FD000C3AE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FBDAD74256781FA000C3AE6 /* Falling Bricks */;
+			targetProxy = 3FBDAD89256781FD000C3AE6 /* PBXContainerItemProxy */;
+		};
+		3FBDAD95256781FD000C3AE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FBDAD74256781FA000C3AE6 /* Falling Bricks */;
+			targetProxy = 3FBDAD94256781FD000C3AE6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3FBDAD7E256781FA000C3AE6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FBDAD7F256781FA000C3AE6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3FBDAD9A256781FD000C3AE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3FBDAD9B256781FD000C3AE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3FBDAD9D256781FD000C3AE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6VH946FT2M;
+				INFOPLIST_FILE = "Falling Bricks/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.henrycalderon.Falling-Bricks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3FBDAD9E256781FD000C3AE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6VH946FT2M;
+				INFOPLIST_FILE = "Falling Bricks/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.henrycalderon.Falling-Bricks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3FBDADA0256781FD000C3AE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6VH946FT2M;
+				INFOPLIST_FILE = "Falling BricksTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.henrycalderon.Falling-BricksTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Falling Bricks.app/Falling Bricks";
+			};
+			name = Debug;
+		};
+		3FBDADA1256781FD000C3AE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6VH946FT2M;
+				INFOPLIST_FILE = "Falling BricksTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.henrycalderon.Falling-BricksTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Falling Bricks.app/Falling Bricks";
+			};
+			name = Release;
+		};
+		3FBDADA3256781FD000C3AE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6VH946FT2M;
+				INFOPLIST_FILE = "Falling BricksUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.henrycalderon.Falling-BricksUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Falling Bricks";
+			};
+			name = Debug;
+		};
+		3FBDADA4256781FD000C3AE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6VH946FT2M;
+				INFOPLIST_FILE = "Falling BricksUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.henrycalderon.Falling-BricksUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Falling Bricks";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FBDAD70256781FA000C3AE6 /* Build configuration list for PBXProject "Falling Bricks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FBDAD9A256781FD000C3AE6 /* Debug */,
+				3FBDAD9B256781FD000C3AE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FBDAD9C256781FD000C3AE6 /* Build configuration list for PBXNativeTarget "Falling Bricks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FBDAD9D256781FD000C3AE6 /* Debug */,
+				3FBDAD9E256781FD000C3AE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FBDAD9F256781FD000C3AE6 /* Build configuration list for PBXNativeTarget "Falling BricksTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FBDADA0256781FD000C3AE6 /* Debug */,
+				3FBDADA1256781FD000C3AE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FBDADA2256781FD000C3AE6 /* Build configuration list for PBXNativeTarget "Falling BricksUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FBDADA3256781FD000C3AE6 /* Debug */,
+				3FBDADA4256781FD000C3AE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3FBDAD6D256781FA000C3AE6 /* Project object */;
+}
